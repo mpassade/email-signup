@@ -71,6 +71,9 @@ module.exports = {
         User.findOne({username: req.params.username})
         .then(user => {
             if (user){
+                if(!user.tempPassword){
+                    return res.render('main/page-not-found')
+                }
                 return res.render('main/set-password', {user})
             }
             return res.render('main/page-not-found')
