@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partial/head.ejs') %> 
+    <title>Signed Up</title>
+</head>
+<body>
+    <div id="signedup-container">
+        <header id="signedup-header">You are logged in <%=user.name%>!</header>
+        <p id="signedup-txt"><a href="/api/v1/email-signup/logout">Logout</a></p>
+    </div>
+</body>
+</html>

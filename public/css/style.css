@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+}
+#signup-container {
+    height: 620px;
+    width: 600px;
+    background-color: #EAEAEA;
+    margin: auto;
+    margin-top: 100px;
+}
+#login-container {
+    height: 450px;
+    width: 600px;
+    background-color: #EAEAEA;
+    margin: auto;
+    margin-top: 100px;
+}
+#signedup-container, #password-container {
+    height: 375px;
+    width: 500px;
+    background-color: #EAEAEA;
+    margin: auto;
+    margin-top: 100px;
+}
+#signup-header, #signedup-header, #login-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 30px;
+}
+#signedup-txt {
+    text-align: center;
+}
+#password-form {
+    padding-top: 20px;
+}
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+.inputs {
+    margin-bottom: 25px;
+    height: 30px;
+    font-size: 20px;
+}
+#state-selection {
+    width: 250px;
+}
+::-webkit-input-placeholder {
+    font-size: 20px;
+}
+.form-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#login-btn {
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    border: 1px solid black;
+}
+#signup-btn {
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+}
+#register-btn {
+    height: 40px;
+    width: 250px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+}
+#login-link, #signup-link {
+    text-decoration: none;
+    color: #13A3B8;
+    font-size: 16px;
+}
+.errors {
+    color: red;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#password-errors {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 20px;
+}

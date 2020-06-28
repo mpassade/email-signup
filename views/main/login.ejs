@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partial/head.ejs') %> 
+    <title>Login</title>
+</head>
+<body>
+    <div id="login-container">
+        <header id="login-header">Login</header>
+        <% if (errors.length) { %>
+            <p class="errors"><%=errors%></p>
+        <% } %>
+        <form action="/api/v1/email-signup/login" method="POST">
+            <div class="form-inputs">
+                <input type="text" class="inputs" name="username" placeholder="Username">
+                <input type="password" class="inputs" name="password" placeholder="Password">
+            </div>
+            <div class="form-btns">
+                <button id="login-btn" type="submit">Login</button>
+                <span><a href="/api/v1/email-signup/signup" id="signup-link">Don't have an account? Register here</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

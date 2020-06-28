@@ -25,14 +25,13 @@ const UserSchema = new mongoose.Schema({
         required: true,
         min: 3
     },
+    tempPassword: {
+        type: Boolean,
+        required: true
+    },
     address: {
         street: {
             type: String,
-            trim: true,
-            required: true
-        },
-        number: {
-            type: Number,
             trim: true,
             required: true
         },

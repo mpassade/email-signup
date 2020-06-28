@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const path = require('path')
+const morgan = require('morgan')
 const mongoose = require('mongoose')
 const flash = require('connect-flash')
 const session = require('express-session')
@@ -8,6 +9,7 @@ const passport = require('passport')
 const MongoStore = require('connect-mongo')(session)
 
 require('dotenv').config()
+require('./lib/passport.js')
 
 const router = require('./routes/routes')
 
@@ -48,7 +50,7 @@ app.use((req, res, next) => {
     next()
 })
 
-app.use('/email-signup', router)
+app.use('/api/v1/email-signup', router)
 
 mongoose.connect(process.env.MONGODB_URI, {
     useCreateIndex: true,
