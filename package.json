@@ -29,7 +29,7 @@
     "express-validator": "^6.6.0",
     "mongoose": "^5.9.20",
     "morgan": "^1.10.0",
-    "nanoid": "^3.1.10",
+    "nanoid": "^3.1.31",
     "node-fetch": "^2.6.0",
     "node-mailjet": "^3.3.1",
     "passport": "^0.4.1",
